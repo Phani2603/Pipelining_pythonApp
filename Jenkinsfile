@@ -14,7 +14,7 @@ pipeline {
             steps {
                 bat '"C:\\Users\\phani\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m venv venv'
                 bat '.\\venv\\Scripts\\python.exe -m pip install --upgrade pip'
-                bat '.\\venv\\Scripts\\pip install -r requirements.txt'
+                bat '.\\venv\\Scripts\\pip install pandas numpy tensorflow flask'
             }
         }
         stage('Run Flask App') {
